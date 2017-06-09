@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="472.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.maciej.controller.MainPaneController">
+   <children>
+      <Pane fx:id="pane" prefHeight="439.0" prefWidth="600.0" stylesheets="@style.css">
+         <children>
+            <fx:include fx:id="startPane" layoutX="200.0" layoutY="50.0" source="StartPane.fxml" />
+            <fx:include fx:id="topScorePane" layoutX="200.0" layoutY="50.0" source="TopScorePane.fxml" />
+            <fx:include fx:id="nextLevelPane" layoutX="200.0" layoutY="50.0" source="NextLevelPane.fxml" />
+            <Circle fx:id="ball" layoutX="300.0" layoutY="389.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" styleClass="cirStyle" />
+            <Rectangle fx:id="palette" arcHeight="5.0" arcWidth="5.0" focusTraversable="true" height="5.0" layoutX="250.0" layoutY="400.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectStyle" width="100.0" />
+            <Label fx:id="startLabel" layoutX="109.0" layoutY="176.0" prefHeight="88.0" prefWidth="382.0" text="ARKANOID">
+               <font>
+                  <Font name="Bauhaus 93" size="78.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <HBox fx:id="bottomPane" alignment="CENTER" prefHeight="44.0" prefWidth="600.0" stylesheets="@style.css" VBox.vgrow="NEVER">
+         <children>
+            <Label text="Points:" HBox.hgrow="NEVER">
+               <font>
+                  <Font name="Bauhaus 93" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="pointsLabels" text="0">
+               <font>
+                  <Font name="Bauhaus 93" size="23.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children></HBox>
+   </children>
+</VBox>

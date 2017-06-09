@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="topScorePane" alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="248.0" prefWidth="200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.maciej.controller.TopScorePaneController">
+   <children>
+      <Label text="Top Score">
+         <font>
+            <Font name="Bauhaus 93" size="30.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="22.0" prefWidth="200.0" VBox.vgrow="NEVER">
+         <children>
+            <Label text="Score">
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Player">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0">
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+         <children>
+            <Label fx:id="p1scoreLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="90.0" text="0">
+               <padding>
+                  <Insets right="25.0" />
+               </padding>
+            </Label>
+            <Pane prefHeight="20.0" prefWidth="90.0">
+               <children>
+                  <Label fx:id="p1nameLabel" prefHeight="20.0" prefWidth="90.0" text="empty" />
+                  <TextField fx:id="p1nameTextField" prefHeight="20.0" prefWidth="90.0" visible="false">
+                     <padding>
+                        <Insets bottom="1.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="p2scoreLabel" alignment="CENTER_RIGHT" prefWidth="90.0" text="0">
+               <padding>
+                  <Insets right="25.0" />
+               </padding>
+            </Label>
+            <Pane prefHeight="20.0" prefWidth="90.0">
+               <children>
+                  <Label fx:id="p2nameLabel" prefHeight="20.0" prefWidth="90.0" text="empty" />
+                  <TextField fx:id="p2nameTextField" prefHeight="20.0" prefWidth="90.0" visible="false">
+                     <padding>
+                        <Insets bottom="1.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="p3scoreLabel" alignment="CENTER_RIGHT" prefWidth="90.0" text="0">
+               <padding>
+                  <Insets right="25.0" />
+               </padding>
+            </Label>
+            <Pane prefHeight="20.0" prefWidth="90.0">
+               <children>
+                  <Label fx:id="p3nameLabel" prefHeight="20.0" prefWidth="90.0" text="empty" />
+                  <TextField fx:id="p3nameTextField" prefHeight="20.0" prefWidth="90.0" visible="false">
+                     <padding>
+                        <Insets bottom="1.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="p4scoreLabel" alignment="CENTER_RIGHT" prefWidth="90.0" text="0">
+               <padding>
+                  <Insets right="25.0" />
+               </padding>
+            </Label>
+            <Pane prefHeight="20.0" prefWidth="90.0">
+               <children>
+                  <Label fx:id="p4nameLabel" prefHeight="20.0" prefWidth="90.0" text="empty" />
+                  <TextField fx:id="p4nameTextField" prefHeight="20.0" prefWidth="90.0" visible="false">
+                     <padding>
+                        <Insets bottom="1.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="p5scoreLabel" alignment="CENTER_RIGHT" prefWidth="90.0" text="0">
+               <padding>
+                  <Insets right="25.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Pane prefHeight="20.0" prefWidth="90.0">
+               <children>
+                  <Label fx:id="p5nameLabel" prefHeight="20.0" prefWidth="90.0" text="empty" />
+                  <TextField fx:id="p5nameTextField" prefHeight="20.0" prefWidth="90.0" visible="false">
+                     <padding>
+                        <Insets bottom="1.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+      </HBox>
+      <Button fx:id="nextButton" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Next">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

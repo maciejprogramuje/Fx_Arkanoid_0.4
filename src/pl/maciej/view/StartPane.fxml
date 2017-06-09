@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="startPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="87.0" prefWidth="200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.maciej.controller.StartPaneController">
+   <children>
+      <Button fx:id="takButton" layoutX="26.0" layoutY="44.0" mnemonicParsing="false" text="Yes" AnchorPane.leftAnchor="26.0">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font></Button>
+      <Button fx:id="nieButton" layoutX="137.0" layoutY="44.0" mnemonicParsing="false" text="No" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="26.0">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font></Button>
+      <Label layoutX="55.0" layoutY="14.0" text="Let's play!">
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

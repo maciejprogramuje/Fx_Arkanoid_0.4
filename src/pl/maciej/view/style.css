@@ -1,0 +1,27 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.boxStyle {
+	-fx-fill: url("/pl/maciej/resources/box.png");
+}
+
+#pane {
+	-fx-background-image: url("../resources/background.png");
+	-fx-background-position: center;
+	-fx-background-repeat: round;
+}
+
+#startPane, #nextLevelPane {
+	-fx-background-image: url("../resources/backgroundStartPane.png");
+}
+
+#bottomPane {
+	-fx-background-image: url("../resources/bottomBackground.png");
+	-fx-background-position: center;
+	-fx-background-repeat: round;
+}
+
+#topScorePane {
+	-fx-background-image: url("../resources/endPaneBackground.png");
+	-fx-background-position: center;
+	-fx-background-repeat: round;
+}
